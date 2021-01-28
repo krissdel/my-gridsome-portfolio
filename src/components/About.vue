@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="about">
     <v-container>
       <v-row>
         <v-col sm="6">
@@ -16,3 +16,9 @@
     </v-container>
   </section>
 </template>
+
+<style scoped>
+img {
+    border-radius: 100%;
+}
+</style>

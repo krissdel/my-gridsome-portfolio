@@ -1,16 +1,19 @@
+
 <template>
   <v-app>
     <v-navigation-drawer width="300" permanent fixed>
       <v-list-item>
-<!-- <v-avatar> -->
-      <!-- <img
+        <!-- <v-avatar> -->
+        <!-- <img
         src="https://images/moi.jpg"
         alt="John"
       >
     </v-avatar> -->
 
         <v-list-item-content>
-          <v-list-item-title class="title"> CHRISTIAN DELORME </v-list-item-title>
+          <v-list-item-title class="title">
+            CHRISTIAN DELORME
+          </v-list-item-title>
           <v-list-item-subtitle> Full stack developer </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -18,7 +21,12 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          link
+          :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -29,8 +37,8 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main >
-      <slot/>
+    <v-main>
+      <slot />
     </v-main>
   </v-app>
 </template>
@@ -46,7 +54,7 @@ export default {
         { title: "Projects", icon: "mdi-apps" },
         { title: "Education & Experience", icon: "mdi-school-outline" },
         { title: "Contact", icon: "mdi-message-text-outline" },
-],
+      ],
     };
   },
 };
@@ -61,13 +69,15 @@ query {
 </static-query>
 
 <style>
- .v-application--wrap {
-   flex-direction: row;
- }
- .v-main {
-   flex: 1 0;
- }
- .v-main {
-   margin-left: 250px;
- }
+html {
+  scroll-behavior: smooth;
+}
+.v-application--wrap {
+  flex-direction: row;
+}
+.v-main {
+  flex: 1 0;
+  margin-left: 250px;
+}
+
 </style>
