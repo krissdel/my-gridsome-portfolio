@@ -1,32 +1,28 @@
 <template>
   <Layout>
-    <section>
-      <v-container>
-         <v-row>
-            <v-col>
-                <g-image alt="ma photo de profile" src="~/moi.png" width="300" />
-                
-            </v-col>
-            <v-col>
-              <!-- <div class="d-flex flex-column"> -->
-
-                <h1>Hi!  </h1>
-                <h2>i'm christ</h2>
-                <p> i'm a full stack dev </p>
-                <!-- </div> -->
-            </v-col>
-         </v-row>
-      </v-container>  
-</section>
-
-   
+    <About />
+    <Projects />
+    
+    <Education />
+    <Contact />
   </Layout>
 </template>
 
 <script>
+import About from "@/components/About.vue";
+import Projects from "@/components/Projects.vue";
+import Contact from "@/components/Contact.vue";
+import Education from "@/components/Education.vue";
+
 export default {
   metaInfo: {
     title: "Hello, world!",
+  },
+  components: {
+    About,
+    Projects,
+    Contact,
+    Education,
   },
 };
 </script>

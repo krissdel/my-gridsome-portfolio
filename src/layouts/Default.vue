@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer width="300" permanent>
+    <v-navigation-drawer width="300" permanent fixed>
       <v-list-item>
 <!-- <v-avatar> -->
       <!-- <img
@@ -29,7 +29,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main>
+    <v-main >
       <slot/>
     </v-main>
   </v-app>
@@ -44,7 +44,7 @@ export default {
       items: [
         { title: "About", icon: "mdi-account-box-outline" },
         { title: "Projects", icon: "mdi-apps" },
-        { title: "Education", icon: "mdi-school-outline" },
+        { title: "Education & Experience", icon: "mdi-school-outline" },
         { title: "Contact", icon: "mdi-message-text-outline" },
 ],
     };
@@ -66,5 +66,8 @@ query {
  }
  .v-main {
    flex: 1 0;
+ }
+ .v-main {
+   margin-left: 250px;
  }
 </style>
