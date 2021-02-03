@@ -1,20 +1,13 @@
 
 <template>
   <v-app>
-    <v-navigation-drawer width="300" permanent fixed>
+    <v-navigation-drawer width="250" permanent fixed>
       <v-list-item>
-        <!-- <v-avatar> -->
-        <!-- <img
-        src="https://images/moi.jpg"
-        alt="John"
-      >
-    </v-avatar> -->
-
         <v-list-item-content>
           <v-list-item-title class="title">
             CHRISTIAN DELORME
           </v-list-item-title>
-          <v-list-item-subtitle> Full stack developer </v-list-item-subtitle>
+          <v-list-item-subtitle> </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
@@ -60,13 +53,6 @@ export default {
 };
 </script>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <style>
 html {
@@ -79,5 +65,4 @@ html {
   flex: 1 0;
   margin-left: 250px;
 }
-
 </style>

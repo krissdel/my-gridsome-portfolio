@@ -19,8 +19,8 @@ This is the project you get when you run `gridsome create new-project`.
 # Design 
 
 ## Colors
-* Light Blue A6E1FA 
+<!-- * Light Blue A6E1FA 
 * Blue 0E6BA8 
 * Dark Blue 0A2472 
 * Dark Dark blue 001C55 
-* Very Dark Blue 00072D
+* Very Dark Blue 00072D -->
